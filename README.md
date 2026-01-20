@@ -27,7 +27,7 @@ La aplicación permite modificar información sensible de otros usuarios sin ver
 2. Manipulación del identificador del usuario
 3. Cambio exitoso del secreto de otra cuenta
 
-![IDOR](Trabajo%20de%20red%20team%20en%20bWAPP/1-idor-cambio-secreto.png)
+![IDOR](screenshots/1-idor-cambio-secreto.png)
 
 ---
 
@@ -40,7 +40,7 @@ El sistema de autenticación presenta controles débiles que permiten el acceso 
 2. Uso de credenciales conocidas
 3. Acceso exitoso sin protecciones adicionales
 
-![Broken Authentication](screenshots/1-idor-cambio-secreto.png)
+![Broken Authentication](screenshots/2-broken-authentication-login-inseguro.png)
 
 ---
 
@@ -53,19 +53,19 @@ La funcionalidad de búsqueda es vulnerable a inyección SQL mediante parámetro
 2. Uso de `UNION SELECT`
 3. Enumeración de tablas del sistema
 
-![SQLi Tablas](screenshots/sqli-enumeracion-tablas.png)
+![SQLi Tablas](screenshots/3-sqli-enumeracion-tablas.png)
 
 #### Enumeración de columnas
 1. Identificación de columnas relevantes
 2. Uso de `information_schema`
 
-![SQLi Columnas](screenshots/sqli-enumeracion-columnas.png)
+![SQLi Columnas](screenshots/3-sqli-enumeracion-columnas.png)
 
 #### Extracción de datos
 1. Selección de columnas sensibles
 2. Obtención de usuarios, emails y hashes
 
-![SQLi Datos](screenshots/sqli-extraccion-datos.png)
+![SQLi Datos](screenshots/3-sqli-Extraccion-datos.png)
 
 ---
 
@@ -75,20 +75,20 @@ La funcionalidad de búsqueda es vulnerable a inyección SQL mediante parámetro
 1. Inyección de código JavaScript vía URL
 2. Ejecución del payload en el navegador
 
-![XSS GET](screenshots/xss-reflected-get.png)
+![XSS GET](screenshots/4-xss-reflejado-get.png)
 
 #### XSS Reflejado (POST)
 1. Envío del payload mediante POST
 2. Ejecución directa del script
 
-![XSS POST](screenshots/xss-reflected-post.png)
+![XSS POST](screenshots/4-xss-reflejado-post.png)
 
 #### XSS Almacenado (Stored)
 1. Inserción del payload en el blog
 2. Persistencia del código malicioso
 3. Ejecución para cualquier usuario que acceda
 
-![XSS Stored](screenshots/xss-stored-blog.png)
+![XSS Stored](screenshots/4-xss-almacenamiento.png)
 
 ---
 
@@ -99,14 +99,14 @@ La funcionalidad de búsqueda es vulnerable a inyección SQL mediante parámetro
 2. Acceso a `/etc/hostname`
 3. Acceso a configuraciones de Apache
 
-![LFI Hostname](screenshots/lfi-hostname.png)
-![LFI Apache](screenshots/lfi-apache-config.png)
+![LFI Hostname](screenshots/5-lfi-hostname.png)
+![LFI Apache](screenshots/5-lfi-apache-config.png)
 
 #### Inclusión remota
 1. Inclusión de recurso externo
 2. Ejecución de código remoto
 
-![RFI](screenshots/rfi-alert.png)
+![RFI](screenshots/5-rfi-alerta.png)
 
 ---
 
@@ -119,7 +119,7 @@ Las inyecciones SQL quedan reflejadas en los logs del servidor web, demostrando 
 2. Identificación de payloads SQL
 3. Correlación ataque → registro
 
-![Access Log](screenshots/access-log-sqli.png)
+![Access Log](screenshots/6-acces-log-sqli.png)
 
 ---
 
