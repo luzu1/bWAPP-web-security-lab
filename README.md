@@ -27,7 +27,7 @@ La aplicación permite modificar información sensible de otros usuarios sin ver
 2. Manipulación del identificador del usuario
 3. Cambio exitoso del secreto de otra cuenta
 
-![IDOR](screenshots/idor-change-secret.png)
+![IDOR](screenshots/1-idor-cambio-secreto.png)
 
 ---
 
@@ -40,7 +40,7 @@ El sistema de autenticación presenta controles débiles que permiten el acceso 
 2. Uso de credenciales conocidas
 3. Acceso exitoso sin protecciones adicionales
 
-![Broken Authentication](screenshots/broken-auth-login.png)
+![Broken Authentication](screenshots/1-idor-cambio-secreto.png)
 
 ---
 
