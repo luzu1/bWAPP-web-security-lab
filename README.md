@@ -27,7 +27,7 @@ La aplicación permite modificar información sensible de otros usuarios sin ver
 2. Manipulación del identificador del usuario
 3. Cambio exitoso del secreto de otra cuenta
 
-![IDOR](screenshots/1-idor-cambio-secreto.png)
+![IDOR](Trabajo%20de%20red%20team%20en%20bWAPP/1-idor-cambio-secreto.png)
 
 ---
 
